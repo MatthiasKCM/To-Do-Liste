@@ -1,0 +1,109 @@
+.body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #d2001a,#7462ff,#f48e21,#23d5ab);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.h1{
+    /* Ausrichtung der Flexbox hier: H1 in Center*/
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.taskBar{
+    display: flex;
+    left: -50px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#addButton{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+
+}
+
+
+#newSpan{
+    flex-grow: 1; /* lässt Span-Container um 1 wachsen, damit Textinhalt ganz links ist*/
+}
+
+.newTask{
+    background-color: #ffffffcf;
+    border: none;
+    outline:none;
+    padding:10px 70px;
+    font-weight: 14px;
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 10px;
+    display: flex; /* Flex Container */
+    justify-content:space-between; /* Inhalt zwischen Start und Ende des Containers verteilen */
+    align-items: center; /* Zentriert die Items vertikal */
+}
+
+.newDeleteBtn, .editBtn{
+    border: none;
+    outline: none;
+    padding: 15px 40px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-left: 10px;
+}
+
+.newDeleteBtn{
+    background: #c61111fd;
+}
+
+.editBtn{
+    background: #21b040fd;
+}
+
+
+#inputTaskbar{
+    border: none;
+    outline:none;
+    padding:16px 100px;
+    font-weight: 14px;
+    border-radius: 40px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

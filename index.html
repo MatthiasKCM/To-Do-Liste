@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Liste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <h1 class="h1">Your To Do List</h1>
+        <!-- addButton -->
+    <div class="taskBar">
+        <input type="text" id="inputTaskbar" placeholder="Add a task">
+        <button id="addButton" onClick="addTask()">add</button> <!--Event beim Klicken vom Button-->  
+    </div>
+    <div id="listGroupTasks" >
+    </div>
+    
+        <!-- Script muss am Ende des <body> Tags eingebunden werden -->
+    <script src="script.js"></script>
+</body>
+</html>
+
